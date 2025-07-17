@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Car Maniacs</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="fav.png" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+
+</head>
+<body>
+<input type="checkbox" id="sidebarToggle" hidden>
+<label for="sidebarToggle" class="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
+
+
+  <nav class="sidebar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="cars.html">Cars</a></li> 
+      <li><a href="#diecast">DieCast Models</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="overlay"></div>
+
+  <main>
+    <section class="video-section" id="home">
+      <video autoplay loop muted playsinline>
+        <source src="media/backv.mp4" type="video/mp4" />
+      </video>
+      <div class="content">
+        <h1>Car Maniac</h1>
+        <p>Crafted for the Connoisseur of Cars.</p>
+        <a href="cars.html" class="btn">Explore Cars</a>  
+      </div>
+    </section>
+    <!-- about section -->
+    <section class="Abt" id="about">
+  <h1>About Us</h1>
+  <p>
+    <strong>Car Maniac</strong> is your premier destination for automotive passion. From supercars to electric innovations, we unite enthusiasts who appreciate performance, design, and driving excellence.
+  </p>
+</section>
+    <!-- Diecast Section -->
+    <section class="dcbg" id="diecast">
+  <h1>DieCast Models</h1>
+  <p>
+    Explore our exclusive collection of meticulously crafted diecast model cars, designed for collectors and enthusiasts alike. <a href="diecast.html">Discover More</a>
+  </p>
+</section>
+    <!-- Contact Section -->
+    <section class="Contact" id="contact">
+      <div class="Contact-wrapper">
+        <h2>Contact Us</h2>
+        <form class="Contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <h2>Car Maniac</h2>
+      <p>Driven by Passion. Designed for Enthusiasts.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="cars.html">Cars</a>
+      <a href="#diecast">DieCast</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-socials">
+      <a href="#"><img src="media/fb.svg" alt="Facebook" /></a>
+      <a href="#"><img src="media/ig.svg" alt="Instagram" /></a>
+      <a href="#"><img src="media/twitter.svg" alt="Twitter" /></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Car Maniac. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+

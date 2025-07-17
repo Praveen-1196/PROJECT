@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ROLLS ROYCE GHOST II | Car Maniacs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #f5c000;
+      letter-spacing: 1px;
+    }
+
+    .car-showcase img.main-image {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease;
+      margin-bottom: 30px;
+    }
+
+    .car-showcase img.main-image:hover {
+      transform: scale(1.01);
+    }
+
+    .car-info {
+      margin-bottom: 40px;
+      padding: 0 10px;
+    }
+
+    .car-info h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      color: #ffa600;
+      text-transform: uppercase;
+    }
+
+    .car-info ul {
+      list-style: none;
+      padding-left: 0;
+      font-size: 18px;
+    }
+
+    .car-info li {
+      margin-bottom: 10px;
+      padding-left: 16px;
+      position: relative;
+    }
+
+    .car-info li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #f5c000;
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 12px 30px rgba(255, 255, 255, 0.2);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      .car-info h2 {
+        font-size: 24px;
+      }
+
+      .car-info ul {
+        font-size: 16px;
+      }
+    }
+    .car-video {
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .car-video video {
+      width: 100vw;
+      height: 75vh;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(255, 255, 255, 0.1);
+      outline: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .car-video video:hover {
+      transform: scale(1.01);
+      box-shadow: 0 18px 40px rgba(255, 255, 255, 0.2);
+    }
+    .back-btn {
+      background-color: #ff4c00;
+      color: white;
+      padding: 10px 18px;
+      font-size: 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 20px 0;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+    .back-btn:hover {
+      background-color: #e04300;
+    }
+
+    /* Zoom Overlay Styles */
+    .zoom-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.9);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      padding: 20px;
+    }
+
+    .zoom-overlay:target {
+      display: flex;
+    }
+
+    .zoom-overlay img {
+      max-width: 90vw;
+      max-height: 90vh;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #ffa600;
+      object-fit: contain;
+    }
+
+    .zoom-close {
+      position: fixed;
+      top: 25px;
+      right: 30px;
+      font-size: 48px;
+      color: #f5c000;
+      text-decoration: none;
+      font-weight: bold;
+      z-index: 10000;
+      cursor: pointer;
+      user-select: none;
+      transition: color 0.3s ease;
+    }
+
+    .zoom-close:hover {
+      color: #ff4c00;
+    }
+  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="media/fav.png" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <main>
+    <a href="cars.html" class="back-btn">← Back To Featured Cars</a>
+
+    <h1>ROLLS-ROYCE GHOST II</h1>
+    <div class="car-video">
+      <video controls poster="media/ghost1.jpg" autoplay loop muted>
+        <source src="media/rr ghost.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="car-showcase">
+      <img class="main-image" src="media/ghost1.jpg" alt="ROLLS-ROYCE GHOST II" />
+      <div class="car-info">
+        <h2>Specifications</h2>
+        <ul>
+          <li>Engine: 6.75L V12 Twin-Turbocharged</li>
+          <li>Horsepower: 563 hp</li>
+          <li>Torque: 627 lb-ft</li>
+          <li>Top Speed: 155 mph</li>
+          <li>0–60 mph: 4.6 sec</li>
+        </ul>
+      </div>
+      <div class="gallery">
+        <a href="#zoom1">
+          <img src="media/ghost1.jpg" alt="Exterior View" />
+        </a>
+        <a href="#zoom2">
+          <img src="media/ghost2.jpg" alt="Interior" />
+        </a>
+        <a href="#zoom3">
+          <img src="media/ghost3.jpg" alt="Rear View" />
+        </a>
+        <a href="#zoom4">
+          <img src="media/ghost4.jpeg" alt="Side View" />
+        </a>
+        <a href="#zoom5">
+          <img src="media/ghost5.jpg" alt="Top View" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Zoom overlays -->
+    <div id="zoom1" class="zoom-overlay">
+      <a href="#" class="zoom-close">×</a>
+      <img src="media/ghost1.jpg" alt="Exterior View" />
+    </div>
+    <div id="zoom2" class="zoom-overlay">
+      <a href="#" class="zoom-close">×</a>
+      <img src="media/ghost2.jpg" alt="Interior" />
+    </div>
+    <div id="zoom3" class="zoom-overlay">
+      <a href="#" class="zoom-close">×</a>
+      <img src="media/ghost3.jpg" alt="Rear View" />
+    </div>
+    <div id="zoom4" class="zoom-overlay">
+      <a href="#" class="zoom-close">×</a>
+      <img src="media/ghost4.jpeg" alt="Side View" />
+    </div>
+    <div id="zoom5" class="zoom-overlay">
+      <a href="#" class="zoom-close">×</a>
+      <img src="media/ghost5.jpg" alt="Top View" />
+    </div>
+  </main>
+</body>
+</html>

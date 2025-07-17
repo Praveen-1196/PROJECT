@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lamborghini Aventador | Car Maniacs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #f5c000;
+      letter-spacing: 1px;
+    }
+
+    .car-video {
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .car-video video {
+      width: 100vw;
+      height: 75vh;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(255, 255, 255, 0.1);
+      outline: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .car-video video:hover {
+      transform: scale(1.01);
+      box-shadow: 0 18px 40px rgba(255, 255, 255, 0.2);
+    }
+
+    .back-btn {
+      background-color: #ff4c00; 
+      color: white;
+      padding: 10px 18px;
+      font-size: 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 20px 0;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .back-btn:hover {
+      background-color: #e04300;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery a img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery a img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 12px 30px rgba(255, 255, 255, 0.2);
+    }
+
+    /* Zoom Overlay */
+    .zoom-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.9);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      padding: 20px;
+    }
+
+    .zoom-overlay:target {
+      display: flex;
+    }
+
+    .zoom-overlay img {
+      max-width: 90vw;
+      max-height: 90vh;
+      border-radius: 10px;
+      box-shadow: 0 0 30px rgba(255,255,255,0.8);
+      object-fit: contain;
+    }
+
+    .zoom-close {
+      position: fixed;
+      top: 20px;
+      right: 25px;
+      font-size: 2.5rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      user-select: none;
+      z-index: 10000;
+      background: rgba(0,0,0,0.5);
+      padding: 4px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .zoom-close:hover {
+      background: rgba(0,0,0,0.8);
+      color: #ff4c00;
+    }
+  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="media/fav.png" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <main>
+    <a href="cars.html" class="back-btn">← Back To Featured Cars</a>
+    <h1>Lamborghini Aventador</h1>
+
+    <div class="car-video">
+      <video controls poster="media/lamboavent.jpg" autoplay loop muted>
+        <source src="media/lamboaventodar.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="gallery">
+      <a href="#zoom1"><img src="media/Lamborghini-Aventador-Exterior.jpg" alt="Exterior View" /></a>
+      <a href="#zoom3"><img src="media/Lamborghini-Aventador-rear.jpg" alt="Rear View" /></a>
+      <a href="#zoom4"><img src="media/Lamborghini-Aventador-side.jpg" alt="Side View" /></a>
+      <a href="#zoom5"><img src="media/top lambo.jpg" alt="Top View" /></a>
+      <a href="#zoom2"><img src="media/Lamborghini-Aventador-in.jpg" alt="Interior" /></a>
+
+    </div>
+
+    <!-- Zoom overlays -->
+    <div id="zoom1" class="zoom-overlay">
+      <a href="#" class="zoom-close">×</a>
+      <img src="media/Lamborghini-Aventador-Exterior.jpg" alt="Exterior View" />
+    </div>
+    
+    <div id="zoom3" class="zoom-overlay">
+      <a href="#" class="zoom-close">×</a>
+      <img src="media/Lamborghini-Aventador-rear.jpg" alt="Rear View" />
+    </div>
+    <div id="zoom4" class="zoom-overlay">
+      <a href="#" class="zoom-close">×</a>
+      <img src="media/Lamborghini-Aventador-side.jpg" alt="Side View" />
+    </div>
+    <div id="zoom5" class="zoom-overlay">
+      <a href="#" class="zoom-close">×</a>
+      <img src="media/top lambo.jpg" alt="Top View" />
+    </div>
+    <div id="zoom2" class="zoom-overlay">
+      <a href="#" class="zoom-close">×</a>
+      <img src="media/Lamborghini-Aventador-in.jpg" alt="Interior" />
+    </div>
+  </main>
+</body>
+</html>
