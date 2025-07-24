@@ -30,9 +30,7 @@ body, html {
   transition: width 0.3s ease;
   overflow: hidden;
 }
-/* .sidebar:hover {
-  width: 200px;
-} */
+
 .sidebar ul {
   position: relative;
   z-index: 2;
@@ -48,10 +46,7 @@ body, html {
   pointer-events: auto;
 }
 
-/* .sidebar:hover ul {
-  opacity: 1;
-  pointer-events: auto;
-} */
+
 .sidebar ul li a {
   color: white;
   text-decoration: none;
@@ -70,11 +65,9 @@ main {
   margin-left: 60px;
   transition: margin-left 0.3s ease;
 }
-/* .sidebar:hover ~ main {
-  margin-left: 200px;
-} */
 
-/* Hero Video Section */
+
+
 .video-section {
   position: relative;
   width: 100%;
@@ -272,7 +265,7 @@ main {
   background-color: #333;
 }
 
-/* Footer */
+
 footer.footer {
   background-color: #111;
   color: #ccc;
@@ -331,7 +324,7 @@ footer.footer {
   border-top: 1px solid #222;
 }
 
-/* Hamburger */
+
 .hamburger {
   display: block;
   position: fixed;
@@ -346,7 +339,7 @@ footer.footer {
   border-radius: 4px;
 }
 
-/* Media Queries in PX */
+
 
 @media (max-width: 1024px) {
   .sidebar:hover {
@@ -392,7 +385,7 @@ footer.footer {
     padding-top: 75%;
   }
   
-  /* Added hamburger styles for small screens */
+ 
   .hamburger {
     display: block;
   }
@@ -410,7 +403,7 @@ footer.footer {
     font-size: 0.875rem;
   }
 }
-/* Sidebar toggle with checkbox */
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -428,7 +421,7 @@ footer.footer {
   left: 0;
 }
 
-/* Hamburger styling */
+
 .hamburger {
   position: fixed;
   top: 10px;
@@ -442,7 +435,6 @@ footer.footer {
   border-radius: 4px;
 }
 
-/* Keep the hover-based expand effect only for desktops */
 @media (min-width: 1025px) {
   .sidebar {
     left: 0;
@@ -453,7 +445,7 @@ footer.footer {
   }
   
 }
-/* Sidebar hidden by default */
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -467,7 +459,7 @@ footer.footer {
   padding-top: 60px;
 }
 
-/* Checkbox triggers sidebar open */
+
 #sidebarToggle:checked + .hamburger + .sidebar {
   left: 0;
 }
@@ -487,7 +479,7 @@ footer.footer {
   display: block;
 }
 
-/* Make main content not shift sideways anymore */
+
 main {
   margin-left: 0;
   transition: none;
